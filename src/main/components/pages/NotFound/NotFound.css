@@ -1,0 +1,25 @@
+
+
+.NotFound {
+	position:relative;
+	width:100vw;
+	height:90vh;
+	overflow:hidden;
+	background-color:#0262c9;
+}
+
+.NotFound-art {
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+
+.NotFound h1 {
+	position:relative;
+	text-align:center;
+	top:50%;
+	transform:translate3d(0,-50%, 0);
+}
+

@@ -1,0 +1,59 @@
+.App {
+	width:100vw;
+	overflow-x:hidden;
+	margin:0;
+}
+
+.App p{
+	font-size:1.5rem;
+	text-align:center;
+}
+
+.App-main {
+	width:100vw;
+	overflow-x:hidden;
+	margin:0;
+}
+
+
+.App-header {
+	position:fixed;
+	z-index:999;
+	width:0;
+	height:0;
+}
+
+
+.App-navToggle {
+	display:none;
+}
+
+.App-navToggle:checked + .NavBar .NavBar-menu{
+	transform:translate3d(0,0,0);
+	transition:200ms transform;
+}
+
+
+
+.App-navToggle:checked + .NavBar .NavBar-hamburger-square {
+	transform:rotate3d(0,0,1,-45deg);
+	transition: 200ms transform;
+}
+
+
+.App-footer {
+	position:relative;
+	display:flex;
+	text-align:center;
+	justify-content:center;
+	align-items:center;
+	background:linear-gradient(orange 1%, green);
+	width:100vw;
+	height:10vh;
+	z-index:1;
+}
+
+.App-footer-black {
+	background:none;
+	background-color:black;
+}

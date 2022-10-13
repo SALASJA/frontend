@@ -1,0 +1,71 @@
+.Section0{
+	position:relative;
+	width:100vw;
+	min-height:100vh;
+	overflow:hidden;
+	margin:0;
+	z-index:1;
+}
+
+.Section0 h1{
+	position:relative;
+	top:35vh;
+	margin-inline:auto;
+	text-align:center;
+	font-size:2.3rem;
+	margin:0;
+	animation-name:fadeInDown;
+	animation-duration:3s;
+}
+
+
+.section0-imageLinks {
+	position:relative;
+	left:0;
+	right:0;
+	margin-inline:auto;
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	animation-name:fadeInDown;
+	animation-duration:3s;
+	width:min(100vw, 400px);
+	top:40vh;
+}
+
+
+.section0-imageLinks img:hover {
+	animation: rubberBand 1s;
+}
+
+
+.section0-imageLinks a {
+	display:block;
+}
+
+.section0-img0 {
+	display:block;
+	width:64.700px;
+	height:64.700px;
+}
+
+.section0-img1 {
+	display:block;
+	width:72.594px;
+	height:61.734px;
+}
+
+
+.Section0-triangle {
+	position:relative;
+	top:50vh;
+	width:0;
+	height:0;
+	border-top:1rem solid white;
+	border-left:1rem solid transparent;
+	border-right:1rem solid transparent;
+	margin-inline:auto;
+	animation: fadeInDown 3s, 5s slideOutDown linear infinite alternate;
+}
+
+

@@ -1,0 +1,48 @@
+.FloatingCircles {
+	position:absolute;
+	width:100vw;
+	min-height:100vh;
+	overflow-x:hidden;
+	margin:0;
+}
+
+.floatingcircle {
+	position:absolute;
+	--size:10vw;
+	width:var(--size);
+	height:var(--size);
+	border-radius:calc(var(--size) / 2);
+	background-color: rgba(255,255,255,0.0);
+	animation-name:floatingcirclemoving;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	animation-duration:10s;
+	transform: translate3d(0,0,0) scale(1,1);
+	--dx:500%;
+	--dy:500%;
+	--dscale:3;
+}
+
+@keyframes floatingcirclemoving {
+	0% {
+		background-color: rgba(255,255,255,0);
+	}
+	
+	10% {
+		background-color: rgba(255,255,255,0);
+	}
+	
+	50% {
+		background-color: rgba(255,255,255,0.6);
+	}
+	
+	90% {
+		background-color: rgba(255,255,255,0.0);
+		transform: translate3d(var(--dx),var(--dy),0) scale(var(--dscale),var(--dscale));
+	}
+	
+	100% {
+		transform: translate3d(var(--dx),var(--dy),0) scale(var(--dscale),var(--dscale));
+		background-color: rgba(255,255,255,0);
+	}
+}

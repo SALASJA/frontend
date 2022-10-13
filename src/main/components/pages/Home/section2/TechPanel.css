@@ -1,0 +1,13 @@
+.TechPanel {
+	width:90vw;
+	height:90vw;
+	border-radius:5vw;
+}
+
+
+@media screen and (min-width:600px){
+	.TechPanel {
+		width:50vw;
+		height:70vh;
+	}
+}

@@ -1,0 +1,18 @@
+.BackgroundDiv {
+	position:absolute;
+	width:100vw;
+	min-height:100%;
+	margin:0;
+	background:linear-gradient(black, #0262c9 40%);
+	z-index:-1;
+}
+
+
+.BackgroundDiv-artdiv{
+	position:fixed;
+	width:100vw;
+	min-height:100vh;
+	margin:0;
+}
+
+

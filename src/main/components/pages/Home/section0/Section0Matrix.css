@@ -1,0 +1,41 @@
+
+.Section0Matrix{
+	position:absolute;
+	left:0;
+	right:0;
+	margin-inline:auto;
+	top:50%;
+	transform: translate3d(0,-50%,0);
+	display:grid;
+	grid-template-columns: repeat(auto-fill, 10vw);
+	width:80vw;
+	height:80vh;
+}
+
+.Section0Matrix-cell {
+	--hoverColor1: rgba(255,255,255,0);
+	--hoverColor2: rgba(255,255,255,1);
+	background-color: var(--hoverColor1);
+	transition: background-color 1s;
+	border-radius:1px solid white;
+}
+
+.Section0Matrix-cell:hover{
+	background-color:var(--hoverColor2);
+	transition: background-color 0s;
+}
+
+
+@keyframes colorfader {
+	49.9%{
+		background-color:var(--hoverColor1);
+	}
+	
+	50% {
+		background-color:var(--hoverColor2);
+	}
+	
+	0% {
+		background-color:var(--hoverColor1);
+	}
+}
